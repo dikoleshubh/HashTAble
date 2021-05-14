@@ -1,4 +1,8 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace HAsh
 {
@@ -60,10 +64,10 @@ namespace HAsh
                 //added element in linkedlist
                 checkForDuplication.AddLast(element);
                 //added element and it's frequency in hashtable.
-                hash.Add(element, count);
+                hash.Add(element, count.ToString());
             }
             //getting the specific value from hashtable.
-            int frequency = hash.Get("they");
+            string frequency = hash.Get("they");
             Console.WriteLine("frequency for they:\t" + frequency);
 
             //Displaying all the elements from the linkedlist
